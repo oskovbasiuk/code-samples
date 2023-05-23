@@ -1,0 +1,18 @@
+<div class="qr-container">
+  <qrcode
+    [width]="qrWidth"
+    [qrdata]="qrLink"
+    [imageSrc]="imageSrc"
+    [imageWidth]="imgWidth"
+    [margin]="0"
+    #qrCode
+  ></qrcode>
+  <div class="print-btn">
+    <button mat-icon-button (click)="printQr(qrCode)">
+      <mat-icon>print</mat-icon>
+    </button>
+    <button mat-icon-button (click)="downloadQr(qrCode)">
+      <mat-icon>download</mat-icon>
+    </button>
+  </div>
+</div>

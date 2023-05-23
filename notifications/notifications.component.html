@@ -1,0 +1,6 @@
+<button mat-icon-button (click)="openNotifications()" class="notifications-button">
+  <mat-icon> notifications </mat-icon>
+  <div class="new-notifications" *ngIf="unreadNotificationsCount$ | async as unreadCount">
+    {{ unreadCount }}
+  </div>
+</button>
